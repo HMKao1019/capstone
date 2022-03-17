@@ -34,13 +34,13 @@ handler= WebhookHandler("channel_secret")          #在 line_developer取得
 @csrf_exempt
 def callback(request):
     if request.method == 'POST':
-	    # get X-Line-Signature header value
+	# get X-Line-Signature header value
         signature = request.META['HTTP_X_LINE_SIGNATURE']
 		
-		# get request body as text
+        # get request body as text
         body = request.body.decode('utf-8')
-
-		# handle webhook body
+        
+	# handle webhook body
         try:
             events = handler.handle(body, signature)
         except InvalidSignatureError:
