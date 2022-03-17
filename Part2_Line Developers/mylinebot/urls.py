@@ -18,6 +18,8 @@ from django.urls import path
 
 from django.conf.urls import include, url
 
+# 將 bot 的 urls 檔案 include 進來
+# 此時 url 路徑為  /bot/callback/ ，就會運行 bot 底下的 callback 函數
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^bot/', include('bot.urls')),
