@@ -9,3 +9,5 @@ Part 3:  GOOGLE APP ENGINE
 申請 Google Cloud Platform 帳號: https://www.tekapo.io/page/8-apply-google-cloud-platform-account
 
 Part 4:  Rich menu of LINE Chatbot
+
+Part 5:
